@@ -1,4 +1,30 @@
 * 
     font-family: 'Roboto', sans-serif;
 
+
+.is__true
+    position: absolute
+    top: 70%
+    transition: 1s all
+    a    
+        transition: 1s all
+        opacity: 1
+    &::after
+        content: "Pravda, ne pizdi sam sebe"
+        font-size: 0
+        opacity: 0
+        transition: 1s all
+        width: 500px
+    &:hover
+        a
+            opacity: 0
+        &::after
+            content: "Pravda, ne pizdi sam sebe"
+            position: absolute
+            top: 0
+            width: 800px
+            transform: translateX(-50%)
+            opacity: 1
+            font-size: 60px
+
 @import "_font"
