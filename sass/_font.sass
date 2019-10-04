@@ -1,0 +1,2342 @@
+body
+  background: #140505
+  height: 100vh
+  overflow: hidden
+  display: flex
+  justify-content: center
+  align-items: center
+  color: #fff
+  perspective: 800px
+
+#ui .text
+  position: absolute
+  font-size: 8rem
+  color: #fff
+  line-height: 8rem
+  opacity: 0
+  font-family: 'Anton', sans-serif
+  transform: translate(-50%, -50%)
+  mix-blend-mode: screen
+
+  &:nth-child(1)
+    color: #fd3203
+    clip-path: polygon(0% 0%, 0% 50%, 10% 50%)
+    transform-origin: -15% 11%
+    animation: fly1 5000ms 0ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(2)
+    color: #fb3106
+    clip-path: polygon(0% 0%, 10% 0%, 10% 50%)
+    transform-origin: -6% 16%
+    animation: fly2 5000ms 40ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(3)
+    color: #f93109
+    clip-path: polygon(10% 0%, 10% 50%, 20% 50%)
+    transform-origin: 32% -16%
+    animation: fly3 5000ms 80ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(4)
+    color: #f7300c
+    clip-path: polygon(10% 0%, 20% 0%, 20% 50%)
+    transform-origin: -27% 45%
+    animation: fly4 5000ms 120ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(5)
+    color: #f5300f
+    clip-path: polygon(20% 0%, 20% 50%, 30% 50%)
+    transform-origin: 43% -37%
+    animation: fly5 5000ms 160ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(6)
+    color: #f32f12
+    clip-path: polygon(20% 0%, 30% 0%, 30% 50%)
+    transform-origin: 43% 1%
+    animation: fly6 5000ms 200ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(7)
+    color: #f12f15
+    clip-path: polygon(30% 0%, 30% 50%, 40% 50%)
+    transform-origin: 37% 38%
+    animation: fly7 5000ms 240ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(8)
+    color: #ef2e18
+    clip-path: polygon(30% 0%, 40% 0%, 40% 50%)
+    transform-origin: 43% 16%
+    animation: fly8 5000ms 280ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(9)
+    color: #ed2e1b
+    clip-path: polygon(40% 0%, 40% 50%, 50% 50%)
+    transform-origin: 18% -28%
+    animation: fly9 5000ms 320ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(10)
+    color: #eb2d1e
+    clip-path: polygon(40% 0%, 50% 0%, 50% 50%)
+    transform-origin: 65% -42%
+    animation: fly10 5000ms 360ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(11)
+    color: #e92d21
+    clip-path: polygon(50% 0%, 50% 50%, 60% 50%)
+    transform-origin: 22% -2%
+    animation: fly11 5000ms 400ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(12)
+    color: #e72c24
+    clip-path: polygon(50% 0%, 60% 0%, 60% 50%)
+    transform-origin: 40% 22%
+    animation: fly12 5000ms 440ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(13)
+    color: #e52c27
+    clip-path: polygon(60% 0%, 60% 50%, 70% 50%)
+    transform-origin: 91% 50%
+    animation: fly13 5000ms 480ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(14)
+    color: #e32b2a
+    clip-path: polygon(60% 0%, 70% 0%, 70% 50%)
+    transform-origin: 82% -17%
+    animation: fly14 5000ms 520ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(15)
+    color: #e12b2d
+    clip-path: polygon(70% 0%, 70% 50%, 80% 50%)
+    transform-origin: 109% 38%
+    animation: fly15 5000ms 560ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(16)
+    color: #df2a30
+    clip-path: polygon(70% 0%, 80% 0%, 80% 50%)
+    transform-origin: 31% 36%
+    animation: fly16 5000ms 600ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(17)
+    color: #dd2a33
+    clip-path: polygon(80% 0%, 80% 50%, 90% 50%)
+    transform-origin: 31% 34%
+    animation: fly17 5000ms 640ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(18)
+    color: #db2936
+    clip-path: polygon(80% 0%, 90% 0%, 90% 50%)
+    transform-origin: 80% -42%
+    animation: fly18 5000ms 680ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(19)
+    color: #d92939
+    clip-path: polygon(90% 0%, 90% 50%, 100% 50%)
+    transform-origin: 52% 13%
+    animation: fly19 5000ms 720ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(20)
+    color: #d7283c
+    clip-path: polygon(90% 0%, 100% 0%, 100% 50%)
+    transform-origin: 112% 19%
+    animation: fly20 5000ms 760ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(21)
+    color: #d5283f
+    clip-path: polygon(0% 50%, 0% 100%, 10% 100%)
+    transform-origin: -48% 58%
+    animation: fly21 5000ms 800ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(22)
+    color: #d32742
+    clip-path: polygon(0% 50%, 10% 50%, 10% 100%)
+    transform-origin: 20% 5%
+    animation: fly22 5000ms 840ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(23)
+    color: #d12745
+    clip-path: polygon(10% 50%, 10% 100%, 20% 100%)
+    transform-origin: 28% 7%
+    animation: fly23 5000ms 880ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(24)
+    color: #cf2648
+    clip-path: polygon(10% 50%, 20% 50%, 20% 100%)
+    transform-origin: 29% 100%
+    animation: fly24 5000ms 920ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(25)
+    color: #cd264b
+    clip-path: polygon(20% 50%, 20% 100%, 30% 100%)
+    transform-origin: 49% 19%
+    animation: fly25 5000ms 960ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(26)
+    color: #cb254e
+    clip-path: polygon(20% 50%, 30% 50%, 30% 100%)
+    transform-origin: 38% 69%
+    animation: fly26 5000ms 1000ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(27)
+    color: #c92551
+    clip-path: polygon(30% 50%, 30% 100%, 40% 100%)
+    transform-origin: 73% 5%
+    animation: fly27 5000ms 1040ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(28)
+    color: #c72454
+    clip-path: polygon(30% 50%, 40% 50%, 40% 100%)
+    transform-origin: 24% 72%
+    animation: fly28 5000ms 1080ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(29)
+    color: #c52457
+    clip-path: polygon(40% 50%, 40% 100%, 50% 100%)
+    transform-origin: 63% 63%
+    animation: fly29 5000ms 1120ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(30)
+    color: #c3235a
+    clip-path: polygon(40% 50%, 50% 50%, 50% 100%)
+    transform-origin: 38% 8%
+    animation: fly30 5000ms 1160ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(31)
+    color: #c1235d
+    clip-path: polygon(50% 50%, 50% 100%, 60% 100%)
+    transform-origin: 93% 63%
+    animation: fly31 5000ms 1200ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(32)
+    color: #bf2260
+    clip-path: polygon(50% 50%, 60% 50%, 60% 100%)
+    transform-origin: 22% 13%
+    animation: fly32 5000ms 1240ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(33)
+    color: #bd2263
+    clip-path: polygon(60% 50%, 60% 100%, 70% 100%)
+    transform-origin: 60% 89%
+    animation: fly33 5000ms 1280ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(34)
+    color: #bb2166
+    clip-path: polygon(60% 50%, 70% 50%, 70% 100%)
+    transform-origin: 40% 29%
+    animation: fly34 5000ms 1320ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(35)
+    color: #b92169
+    clip-path: polygon(70% 50%, 70% 100%, 80% 100%)
+    transform-origin: 116% 30%
+    animation: fly35 5000ms 1360ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(36)
+    color: #b7206c
+    clip-path: polygon(70% 50%, 80% 50%, 80% 100%)
+    transform-origin: 90% 9%
+    animation: fly36 5000ms 1400ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(37)
+    color: #b5206f
+    clip-path: polygon(80% 50%, 80% 100%, 90% 100%)
+    transform-origin: 55% 65%
+    animation: fly37 5000ms 1440ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(38)
+    color: #b31f72
+    clip-path: polygon(80% 50%, 90% 50%, 90% 100%)
+    transform-origin: 69% 91%
+    animation: fly38 5000ms 1480ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(39)
+    color: #b11f75
+    clip-path: polygon(90% 50%, 90% 100%, 100% 100%)
+    transform-origin: 70% 67%
+    animation: fly39 5000ms 1520ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(40)
+    color: #af1e78
+    clip-path: polygon(90% 50%, 100% 50%, 100% 100%)
+    transform-origin: 48% 2%
+    animation: fly40 5000ms 1560ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(41)
+    color: #ad1e7b
+    clip-path: polygon(0% 100%, 0% 150%, 10% 150%)
+    transform-origin: -21% 105%
+    animation: fly41 5000ms 1600ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(42)
+    color: #ab1d7e
+    clip-path: polygon(0% 100%, 10% 100%, 10% 150%)
+    transform-origin: 25% 108%
+    animation: fly42 5000ms 1640ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(43)
+    color: #a91d81
+    clip-path: polygon(10% 100%, 10% 150%, 20% 150%)
+    transform-origin: 12% 59%
+    animation: fly43 5000ms 1680ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(44)
+    color: #a71c84
+    clip-path: polygon(10% 100%, 20% 100%, 20% 150%)
+    transform-origin: 8% 58%
+    animation: fly44 5000ms 1720ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(45)
+    color: #a51c87
+    clip-path: polygon(20% 100%, 20% 150%, 30% 150%)
+    transform-origin: 68% 122%
+    animation: fly45 5000ms 1760ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(46)
+    color: #a31b8a
+    clip-path: polygon(20% 100%, 30% 100%, 30% 150%)
+    transform-origin: 15% 63%
+    animation: fly46 5000ms 1800ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(47)
+    color: #a11b8d
+    clip-path: polygon(30% 100%, 30% 150%, 40% 150%)
+    transform-origin: 14% 82%
+    animation: fly47 5000ms 1840ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(48)
+    color: #9f1a90
+    clip-path: polygon(30% 100%, 40% 100%, 40% 150%)
+    transform-origin: 4% 52%
+    animation: fly48 5000ms 1880ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(49)
+    color: #9d1a93
+    clip-path: polygon(40% 100%, 40% 150%, 50% 150%)
+    transform-origin: 77% 109%
+    animation: fly49 5000ms 1920ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(50)
+    color: #9b1996
+    clip-path: polygon(40% 100%, 50% 100%, 50% 150%)
+    transform-origin: 66% 123%
+    animation: fly50 5000ms 1960ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(51)
+    color: #991999
+    clip-path: polygon(50% 100%, 50% 150%, 60% 150%)
+    transform-origin: 79% 90%
+    animation: fly51 5000ms 2000ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(52)
+    color: #97189c
+    clip-path: polygon(50% 100%, 60% 100%, 60% 150%)
+    transform-origin: 47% 103%
+    animation: fly52 5000ms 2040ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(53)
+    color: #95189f
+    clip-path: polygon(60% 100%, 60% 150%, 70% 150%)
+    transform-origin: 106% 145%
+    animation: fly53 5000ms 2080ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(54)
+    color: #9317a2
+    clip-path: polygon(60% 100%, 70% 100%, 70% 150%)
+    transform-origin: 28% 112%
+    animation: fly54 5000ms 2120ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(55)
+    color: #9117a5
+    clip-path: polygon(70% 100%, 70% 150%, 80% 150%)
+    transform-origin: 78% 99%
+    animation: fly55 5000ms 2160ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(56)
+    color: #8f16a8
+    clip-path: polygon(70% 100%, 80% 100%, 80% 150%)
+    transform-origin: 55% 102%
+    animation: fly56 5000ms 2200ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(57)
+    color: #8d16ab
+    clip-path: polygon(80% 100%, 80% 150%, 90% 150%)
+    transform-origin: 99% 108%
+    animation: fly57 5000ms 2240ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(58)
+    color: #8b15ae
+    clip-path: polygon(80% 100%, 90% 100%, 90% 150%)
+    transform-origin: 82% 98%
+    animation: fly58 5000ms 2280ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(59)
+    color: #8915b1
+    clip-path: polygon(90% 100%, 90% 150%, 100% 150%)
+    transform-origin: 91% 112%
+    animation: fly59 5000ms 2320ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(60)
+    color: #8714b4
+    clip-path: polygon(90% 100%, 100% 100%, 100% 150%)
+    transform-origin: 72% 139%
+    animation: fly60 5000ms 2360ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(61)
+    color: #8514b7
+    clip-path: polygon(0% 150%, 0% 200%, 10% 200%)
+    transform-origin: -21% 154%
+    animation: fly61 5000ms 2400ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(62)
+    color: #8313ba
+    clip-path: polygon(0% 150%, 10% 150%, 10% 200%)
+    transform-origin: 18% 190%
+    animation: fly62 5000ms 2440ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(63)
+    color: #8113bd
+    clip-path: polygon(10% 150%, 10% 200%, 20% 200%)
+    transform-origin: 60% 129%
+    animation: fly63 5000ms 2480ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(64)
+    color: #7f12c0
+    clip-path: polygon(10% 150%, 20% 150%, 20% 200%)
+    transform-origin: 49% 173%
+    animation: fly64 5000ms 2520ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(65)
+    color: #7d12c3
+    clip-path: polygon(20% 150%, 20% 200%, 30% 200%)
+    transform-origin: -16% 136%
+    animation: fly65 5000ms 2560ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(66)
+    color: #7b11c6
+    clip-path: polygon(20% 150%, 30% 150%, 30% 200%)
+    transform-origin: 60% 179%
+    animation: fly66 5000ms 2600ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(67)
+    color: #7911c9
+    clip-path: polygon(30% 150%, 30% 200%, 40% 200%)
+    transform-origin: 52% 102%
+    animation: fly67 5000ms 2640ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(68)
+    color: #7710cc
+    clip-path: polygon(30% 150%, 40% 150%, 40% 200%)
+    transform-origin: 42% 184%
+    animation: fly68 5000ms 2680ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(69)
+    color: #7510cf
+    clip-path: polygon(40% 150%, 40% 200%, 50% 200%)
+    transform-origin: 86% 198%
+    animation: fly69 5000ms 2720ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(70)
+    color: #730fd2
+    clip-path: polygon(40% 150%, 50% 150%, 50% 200%)
+    transform-origin: 85% 128%
+    animation: fly70 5000ms 2760ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(71)
+    color: #710fd5
+    clip-path: polygon(50% 150%, 50% 200%, 60% 200%)
+    transform-origin: 35% 187%
+    animation: fly71 5000ms 2800ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(72)
+    color: #6f0ed8
+    clip-path: polygon(50% 150%, 60% 150%, 60% 200%)
+    transform-origin: 82% 163%
+    animation: fly72 5000ms 2840ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(73)
+    color: #6d0edb
+    clip-path: polygon(60% 150%, 60% 200%, 70% 200%)
+    transform-origin: 92% 108%
+    animation: fly73 5000ms 2880ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(74)
+    color: #6b0dde
+    clip-path: polygon(60% 150%, 70% 150%, 70% 200%)
+    transform-origin: 81% 138%
+    animation: fly74 5000ms 2920ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(75)
+    color: #690de1
+    clip-path: polygon(70% 150%, 70% 200%, 80% 200%)
+    transform-origin: 106% 135%
+    animation: fly75 5000ms 2960ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(76)
+    color: #670ce4
+    clip-path: polygon(70% 150%, 80% 150%, 80% 200%)
+    transform-origin: 43% 154%
+    animation: fly76 5000ms 3000ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(77)
+    color: #650ce7
+    clip-path: polygon(80% 150%, 80% 200%, 90% 200%)
+    transform-origin: 98% 106%
+    animation: fly77 5000ms 3040ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(78)
+    color: #630bea
+    clip-path: polygon(80% 150%, 90% 150%, 90% 200%)
+    transform-origin: 64% 126%
+    animation: fly78 5000ms 3080ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(79)
+    color: #610bed
+    clip-path: polygon(90% 150%, 90% 200%, 100% 200%)
+    transform-origin: 111% 115%
+    animation: fly79 5000ms 3120ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(80)
+    color: #5f0af0
+    clip-path: polygon(90% 150%, 100% 150%, 100% 200%)
+    transform-origin: 96% 114%
+    animation: fly80 5000ms 3160ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(81)
+    color: #5d0af3
+    clip-path: polygon(0% 200%, 0% 250%, 10% 250%)
+    transform-origin: 2% 219%
+    animation: fly81 5000ms 3200ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(82)
+    color: #5b09f6
+    clip-path: polygon(0% 200%, 10% 200%, 10% 250%)
+    transform-origin: -46% 174%
+    animation: fly82 5000ms 3240ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(83)
+    color: #5909f9
+    clip-path: polygon(10% 200%, 10% 250%, 20% 250%)
+    transform-origin: 44% 221%
+    animation: fly83 5000ms 3280ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(84)
+    color: #5708fc
+    clip-path: polygon(10% 200%, 20% 200%, 20% 250%)
+    transform-origin: 43% 167%
+    animation: fly84 5000ms 3320ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(85)
+    color: #5508ff
+    clip-path: polygon(20% 200%, 20% 250%, 30% 250%)
+    transform-origin: -5% 173%
+    animation: fly85 5000ms 3360ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(86)
+    color: #5307ff
+    clip-path: polygon(20% 200%, 30% 200%, 30% 250%)
+    transform-origin: 1% 207%
+    animation: fly86 5000ms 3400ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(87)
+    color: #5107ff
+    clip-path: polygon(30% 200%, 30% 250%, 40% 250%)
+    transform-origin: -11% 181%
+    animation: fly87 5000ms 3440ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(88)
+    color: #4f06ff
+    clip-path: polygon(30% 200%, 40% 200%, 40% 250%)
+    transform-origin: -9% 167%
+    animation: fly88 5000ms 3480ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(89)
+    color: #4d06ff
+    clip-path: polygon(40% 200%, 40% 250%, 50% 250%)
+    transform-origin: 77% 224%
+    animation: fly89 5000ms 3520ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(90)
+    color: #4b05ff
+    clip-path: polygon(40% 200%, 50% 200%, 50% 250%)
+    transform-origin: 44% 236%
+    animation: fly90 5000ms 3560ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(91)
+    color: #4905ff
+    clip-path: polygon(50% 200%, 50% 250%, 60% 250%)
+    transform-origin: 16% 158%
+    animation: fly91 5000ms 3600ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(92)
+    color: #4704ff
+    clip-path: polygon(50% 200%, 60% 200%, 60% 250%)
+    transform-origin: 69% 215%
+    animation: fly92 5000ms 3640ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(93)
+    color: #4504ff
+    clip-path: polygon(60% 200%, 60% 250%, 70% 250%)
+    transform-origin: 38% 238%
+    animation: fly93 5000ms 3680ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(94)
+    color: #4303ff
+    clip-path: polygon(60% 200%, 70% 200%, 70% 250%)
+    transform-origin: 74% 184%
+    animation: fly94 5000ms 3720ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(95)
+    color: #4103ff
+    clip-path: polygon(70% 200%, 70% 250%, 80% 250%)
+    transform-origin: 24% 176%
+    animation: fly95 5000ms 3760ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(96)
+    color: #3f02ff
+    clip-path: polygon(70% 200%, 80% 200%, 80% 250%)
+    transform-origin: 111% 176%
+    animation: fly96 5000ms 3800ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(97)
+    color: #3d02ff
+    clip-path: polygon(80% 200%, 80% 250%, 90% 250%)
+    transform-origin: 99% 250%
+    animation: fly97 5000ms 3840ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(98)
+    color: #3b01ff
+    clip-path: polygon(80% 200%, 90% 200%, 90% 250%)
+    transform-origin: 31% 185%
+    animation: fly98 5000ms 3880ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(99)
+    color: #3901ff
+    clip-path: polygon(90% 200%, 90% 250%, 100% 250%)
+    transform-origin: 41% 221%
+    animation: fly99 5000ms 3920ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(100)
+    color: #3700ff
+    clip-path: polygon(90% 200%, 100% 200%, 100% 250%)
+    transform-origin: 129% 249%
+    animation: fly100 5000ms 3960ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+  &:nth-child(101)
+    color: #3500ff
+    clip-path: polygon(0% 250%, 0% 300%, 10% 300%)
+    transform-origin: -37% 250%
+    animation: fly101 5000ms 4000ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate
+
+@keyframes fly1
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-34deg) rotateY(-325deg) rotateZ(475deg) translateZ(-2166px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-34deg) rotateY(-325deg) rotateZ(475deg) translateZ(-2166px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly2
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-153deg) rotateY(-3deg) rotateZ(336deg) translateZ(-446px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-153deg) rotateY(-3deg) rotateZ(336deg) translateZ(-446px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly3
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-95deg) rotateY(362deg) rotateZ(320deg) translateZ(-306px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-95deg) rotateY(362deg) rotateZ(320deg) translateZ(-306px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly4
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-66deg) rotateY(30deg) rotateZ(-257deg) translateZ(-786px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-66deg) rotateY(30deg) rotateZ(-257deg) translateZ(-786px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly5
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(173deg) rotateY(-490deg) rotateZ(-194deg) translateZ(-1683px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(173deg) rotateY(-490deg) rotateZ(-194deg) translateZ(-1683px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly6
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(305deg) rotateY(-104deg) rotateZ(311deg) translateZ(-38px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(305deg) rotateY(-104deg) rotateZ(311deg) translateZ(-38px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly7
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(257deg) rotateY(-471deg) rotateZ(-6deg) translateZ(-486px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(257deg) rotateY(-471deg) rotateZ(-6deg) translateZ(-486px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly8
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-62deg) rotateY(121deg) rotateZ(-489deg) translateZ(-2274px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-62deg) rotateY(121deg) rotateZ(-489deg) translateZ(-2274px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly9
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(217deg) rotateY(345deg) rotateZ(293deg) translateZ(-278px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(217deg) rotateY(345deg) rotateZ(293deg) translateZ(-278px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly10
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(40deg) rotateY(250deg) rotateZ(-161deg) translateZ(-2181px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(40deg) rotateY(250deg) rotateZ(-161deg) translateZ(-2181px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly11
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-192deg) rotateY(427deg) rotateZ(227deg) translateZ(-220px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-192deg) rotateY(427deg) rotateZ(227deg) translateZ(-220px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly12
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(221deg) rotateY(371deg) rotateZ(109deg) translateZ(-1823px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(221deg) rotateY(371deg) rotateZ(109deg) translateZ(-1823px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly13
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-226deg) rotateY(-398deg) rotateZ(331deg) translateZ(-1745px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-226deg) rotateY(-398deg) rotateZ(331deg) translateZ(-1745px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly14
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(189deg) rotateY(284deg) rotateZ(258deg) translateZ(-1841px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(189deg) rotateY(284deg) rotateZ(258deg) translateZ(-1841px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly15
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(317deg) rotateY(-391deg) rotateZ(66deg) translateZ(24px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(317deg) rotateY(-391deg) rotateZ(66deg) translateZ(24px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly16
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-278deg) rotateY(217deg) rotateZ(465deg) translateZ(-115px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-278deg) rotateY(217deg) rotateZ(465deg) translateZ(-115px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly17
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(390deg) rotateY(112deg) rotateZ(-298deg) translateZ(-1709px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(390deg) rotateY(112deg) rotateZ(-298deg) translateZ(-1709px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly18
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(320deg) rotateY(-73deg) rotateZ(-135deg) translateZ(-1852px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(320deg) rotateY(-73deg) rotateZ(-135deg) translateZ(-1852px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly19
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(375deg) rotateY(-412deg) rotateZ(163deg) translateZ(-2385px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(375deg) rotateY(-412deg) rotateZ(163deg) translateZ(-2385px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly20
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-29deg) rotateY(93deg) rotateZ(490deg) translateZ(-1024px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-29deg) rotateY(93deg) rotateZ(490deg) translateZ(-1024px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly21
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-403deg) rotateY(247deg) rotateZ(166deg) translateZ(-189px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-403deg) rotateY(247deg) rotateZ(166deg) translateZ(-189px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly22
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-54deg) rotateY(481deg) rotateZ(-300deg) translateZ(-166px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-54deg) rotateY(481deg) rotateZ(-300deg) translateZ(-166px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly23
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(342deg) rotateY(52deg) rotateZ(24deg) translateZ(-1754px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(342deg) rotateY(52deg) rotateZ(24deg) translateZ(-1754px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly24
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-224deg) rotateY(117deg) rotateZ(-157deg) translateZ(-1211px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-224deg) rotateY(117deg) rotateZ(-157deg) translateZ(-1211px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly25
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(315deg) rotateY(254deg) rotateZ(-446deg) translateZ(-1769px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(315deg) rotateY(254deg) rotateZ(-446deg) translateZ(-1769px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly26
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-191deg) rotateY(-486deg) rotateZ(338deg) translateZ(-649px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-191deg) rotateY(-486deg) rotateZ(338deg) translateZ(-649px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly27
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(175deg) rotateY(-375deg) rotateZ(493deg) translateZ(-979px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(175deg) rotateY(-375deg) rotateZ(493deg) translateZ(-979px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly28
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-216deg) rotateY(-185deg) rotateZ(276deg) translateZ(-39px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-216deg) rotateY(-185deg) rotateZ(276deg) translateZ(-39px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly29
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(472deg) rotateY(100deg) rotateZ(-113deg) translateZ(-1404px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(472deg) rotateY(100deg) rotateZ(-113deg) translateZ(-1404px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly30
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(21deg) rotateY(395deg) rotateZ(-323deg) translateZ(61px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(21deg) rotateY(395deg) rotateZ(-323deg) translateZ(61px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly31
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(334deg) rotateY(-153deg) rotateZ(397deg) translateZ(-17px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(334deg) rotateY(-153deg) rotateZ(397deg) translateZ(-17px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly32
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(460deg) rotateY(-480deg) rotateZ(40deg) translateZ(-1054px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(460deg) rotateY(-480deg) rotateZ(40deg) translateZ(-1054px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly33
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-232deg) rotateY(-111deg) rotateZ(-378deg) translateZ(-38px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-232deg) rotateY(-111deg) rotateZ(-378deg) translateZ(-38px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly34
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-67deg) rotateY(-447deg) rotateZ(-142deg) translateZ(-2316px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-67deg) rotateY(-447deg) rotateZ(-142deg) translateZ(-2316px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly35
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-63deg) rotateY(42deg) rotateZ(-283deg) translateZ(-1819px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-63deg) rotateY(42deg) rotateZ(-283deg) translateZ(-1819px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly36
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(98deg) rotateY(336deg) rotateZ(-393deg) translateZ(-1119px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(98deg) rotateY(336deg) rotateZ(-393deg) translateZ(-1119px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly37
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(84deg) rotateY(-84deg) rotateZ(-489deg) translateZ(-2430px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(84deg) rotateY(-84deg) rotateZ(-489deg) translateZ(-2430px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly38
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(53deg) rotateY(41deg) rotateZ(-304deg) translateZ(317px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(53deg) rotateY(41deg) rotateZ(-304deg) translateZ(317px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly39
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(355deg) rotateY(-374deg) rotateZ(-211deg) translateZ(-2323px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(355deg) rotateY(-374deg) rotateZ(-211deg) translateZ(-2323px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly40
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(152deg) rotateY(91deg) rotateZ(-467deg) translateZ(-895px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(152deg) rotateY(91deg) rotateZ(-467deg) translateZ(-895px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly41
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(55deg) rotateY(-176deg) rotateZ(-362deg) translateZ(-27px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(55deg) rotateY(-176deg) rotateZ(-362deg) translateZ(-27px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly42
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-143deg) rotateY(96deg) rotateZ(-427deg) translateZ(-1919px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-143deg) rotateY(96deg) rotateZ(-427deg) translateZ(-1919px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly43
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(135deg) rotateY(274deg) rotateZ(124deg) translateZ(-2133px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(135deg) rotateY(274deg) rotateZ(124deg) translateZ(-2133px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly44
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-303deg) rotateY(456deg) rotateZ(-385deg) translateZ(-1349px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-303deg) rotateY(456deg) rotateZ(-385deg) translateZ(-1349px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly45
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-387deg) rotateY(-409deg) rotateZ(405deg) translateZ(68px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-387deg) rotateY(-409deg) rotateZ(405deg) translateZ(68px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly46
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-34deg) rotateY(356deg) rotateZ(-426deg) translateZ(-985px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-34deg) rotateY(356deg) rotateZ(-426deg) translateZ(-985px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly47
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-297deg) rotateY(444deg) rotateZ(253deg) translateZ(-1757px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-297deg) rotateY(444deg) rotateZ(253deg) translateZ(-1757px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly48
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-406deg) rotateY(-470deg) rotateZ(-68deg) translateZ(144px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-406deg) rotateY(-470deg) rotateZ(-68deg) translateZ(144px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly49
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(90deg) rotateY(-123deg) rotateZ(-140deg) translateZ(312px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(90deg) rotateY(-123deg) rotateZ(-140deg) translateZ(312px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly50
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-128deg) rotateY(252deg) rotateZ(158deg) translateZ(-904px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-128deg) rotateY(252deg) rotateZ(158deg) translateZ(-904px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly51
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-217deg) rotateY(479deg) rotateZ(-331deg) translateZ(422px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-217deg) rotateY(479deg) rotateZ(-331deg) translateZ(422px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly52
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(68deg) rotateY(-121deg) rotateZ(149deg) translateZ(-896px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(68deg) rotateY(-121deg) rotateZ(149deg) translateZ(-896px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly53
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-193deg) rotateY(316deg) rotateZ(105deg) translateZ(-791px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-193deg) rotateY(316deg) rotateZ(105deg) translateZ(-791px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly54
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(45deg) rotateY(237deg) rotateZ(-420deg) translateZ(-760px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(45deg) rotateY(237deg) rotateZ(-420deg) translateZ(-760px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly55
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(119deg) rotateY(406deg) rotateZ(194deg) translateZ(-195px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(119deg) rotateY(406deg) rotateZ(194deg) translateZ(-195px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly56
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-334deg) rotateY(-236deg) rotateZ(-455deg) translateZ(-101px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-334deg) rotateY(-236deg) rotateZ(-455deg) translateZ(-101px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly57
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(246deg) rotateY(-320deg) rotateZ(38deg) translateZ(-2001px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(246deg) rotateY(-320deg) rotateZ(38deg) translateZ(-2001px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly58
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-360deg) rotateY(453deg) rotateZ(-493deg) translateZ(-353px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-360deg) rotateY(453deg) rotateZ(-493deg) translateZ(-353px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly59
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-182deg) rotateY(21deg) rotateZ(-272deg) translateZ(-608px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-182deg) rotateY(21deg) rotateZ(-272deg) translateZ(-608px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly60
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-111deg) rotateY(250deg) rotateZ(-26deg) translateZ(380px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-111deg) rotateY(250deg) rotateZ(-26deg) translateZ(380px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly61
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(418deg) rotateY(397deg) rotateZ(310deg) translateZ(-241px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(418deg) rotateY(397deg) rotateZ(310deg) translateZ(-241px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly62
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-240deg) rotateY(20deg) rotateZ(-143deg) translateZ(-1860px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-240deg) rotateY(20deg) rotateZ(-143deg) translateZ(-1860px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly63
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(288deg) rotateY(209deg) rotateZ(-44deg) translateZ(-1222px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(288deg) rotateY(209deg) rotateZ(-44deg) translateZ(-1222px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly64
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-194deg) rotateY(-401deg) rotateZ(302deg) translateZ(-2045px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-194deg) rotateY(-401deg) rotateZ(302deg) translateZ(-2045px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly65
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(202deg) rotateY(340deg) rotateZ(-205deg) translateZ(-518px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(202deg) rotateY(340deg) rotateZ(-205deg) translateZ(-518px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly66
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-43deg) rotateY(134deg) rotateZ(111deg) translateZ(-1846px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-43deg) rotateY(134deg) rotateZ(111deg) translateZ(-1846px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly67
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(124deg) rotateY(-316deg) rotateZ(395deg) translateZ(-264px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(124deg) rotateY(-316deg) rotateZ(395deg) translateZ(-264px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly68
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-389deg) rotateY(451deg) rotateZ(-372deg) translateZ(-2438px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-389deg) rotateY(451deg) rotateZ(-372deg) translateZ(-2438px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly69
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(191deg) rotateY(482deg) rotateZ(-483deg) translateZ(-434px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(191deg) rotateY(482deg) rotateZ(-483deg) translateZ(-434px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly70
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-300deg) rotateY(299deg) rotateZ(-151deg) translateZ(-361px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-300deg) rotateY(299deg) rotateZ(-151deg) translateZ(-361px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly71
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-323deg) rotateY(-105deg) rotateZ(17deg) translateZ(-1754px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-323deg) rotateY(-105deg) rotateZ(17deg) translateZ(-1754px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly72
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-79deg) rotateY(-163deg) rotateZ(-95deg) translateZ(-2099px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-79deg) rotateY(-163deg) rotateZ(-95deg) translateZ(-2099px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly73
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(249deg) rotateY(-41deg) rotateZ(276deg) translateZ(-1238px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(249deg) rotateY(-41deg) rotateZ(276deg) translateZ(-1238px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly74
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-123deg) rotateY(-68deg) rotateZ(-399deg) translateZ(-1474px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-123deg) rotateY(-68deg) rotateZ(-399deg) translateZ(-1474px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly75
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-270deg) rotateY(108deg) rotateZ(19deg) translateZ(257px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-270deg) rotateY(108deg) rotateZ(19deg) translateZ(257px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly76
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-465deg) rotateY(-477deg) rotateZ(-301deg) translateZ(-966px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-465deg) rotateY(-477deg) rotateZ(-301deg) translateZ(-966px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly77
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-484deg) rotateY(303deg) rotateZ(176deg) translateZ(-2356px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-484deg) rotateY(303deg) rotateZ(176deg) translateZ(-2356px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly78
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(69deg) rotateY(78deg) rotateZ(305deg) translateZ(-644px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(69deg) rotateY(78deg) rotateZ(305deg) translateZ(-644px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly79
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-168deg) rotateY(-23deg) rotateZ(300deg) translateZ(-686px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-168deg) rotateY(-23deg) rotateZ(300deg) translateZ(-686px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly80
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-429deg) rotateY(-413deg) rotateZ(-276deg) translateZ(-15px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-429deg) rotateY(-413deg) rotateZ(-276deg) translateZ(-15px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly81
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(466deg) rotateY(-60deg) rotateZ(2deg) translateZ(199px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(466deg) rotateY(-60deg) rotateZ(2deg) translateZ(199px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly82
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(295deg) rotateY(335deg) rotateZ(-356deg) translateZ(-1643px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(295deg) rotateY(335deg) rotateZ(-356deg) translateZ(-1643px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly83
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-5deg) rotateY(-329deg) rotateZ(-329deg) translateZ(-1993px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-5deg) rotateY(-329deg) rotateZ(-329deg) translateZ(-1993px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly84
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(237deg) rotateY(-302deg) rotateZ(-174deg) translateZ(-2076px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(237deg) rotateY(-302deg) rotateZ(-174deg) translateZ(-2076px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly85
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-333deg) rotateY(345deg) rotateZ(99deg) translateZ(98px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-333deg) rotateY(345deg) rotateZ(99deg) translateZ(98px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly86
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-280deg) rotateY(74deg) rotateZ(170deg) translateZ(-1696px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-280deg) rotateY(74deg) rotateZ(170deg) translateZ(-1696px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly87
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-332deg) rotateY(255deg) rotateZ(-304deg) translateZ(74px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-332deg) rotateY(255deg) rotateZ(-304deg) translateZ(74px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly88
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(158deg) rotateY(393deg) rotateZ(426deg) translateZ(-1091px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(158deg) rotateY(393deg) rotateZ(426deg) translateZ(-1091px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly89
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(208deg) rotateY(67deg) rotateZ(331deg) translateZ(-329px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(208deg) rotateY(67deg) rotateZ(331deg) translateZ(-329px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly90
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(41deg) rotateY(-261deg) rotateZ(126deg) translateZ(-527px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(41deg) rotateY(-261deg) rotateZ(126deg) translateZ(-527px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly91
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(376deg) rotateY(-86deg) rotateZ(-283deg) translateZ(-460px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(376deg) rotateY(-86deg) rotateZ(-283deg) translateZ(-460px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly92
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(246deg) rotateY(-179deg) rotateZ(154deg) translateZ(-2227px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(246deg) rotateY(-179deg) rotateZ(154deg) translateZ(-2227px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly93
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-248deg) rotateY(46deg) rotateZ(-394deg) translateZ(-443px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-248deg) rotateY(46deg) rotateZ(-394deg) translateZ(-443px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly94
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(468deg) rotateY(0deg) rotateZ(178deg) translateZ(-662px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(468deg) rotateY(0deg) rotateZ(178deg) translateZ(-662px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly95
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(105deg) rotateY(-299deg) rotateZ(28deg) translateZ(184px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(105deg) rotateY(-299deg) rotateZ(28deg) translateZ(184px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly96
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-317deg) rotateY(105deg) rotateZ(403deg) translateZ(-2011px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-317deg) rotateY(105deg) rotateZ(403deg) translateZ(-2011px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly97
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-336deg) rotateY(294deg) rotateZ(-83deg) translateZ(-432px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-336deg) rotateY(294deg) rotateZ(-83deg) translateZ(-432px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly98
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(82deg) rotateY(253deg) rotateZ(433deg) translateZ(-161px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(82deg) rotateY(253deg) rotateZ(433deg) translateZ(-161px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly99
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-113deg) rotateY(-475deg) rotateZ(317deg) translateZ(-1438px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-113deg) rotateY(-475deg) rotateZ(317deg) translateZ(-1438px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly100
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-61deg) rotateY(158deg) rotateZ(-382deg) translateZ(-531px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(-61deg) rotateY(158deg) rotateZ(-382deg) translateZ(-531px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+@keyframes fly101
+  0%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(206deg) rotateY(-417deg) rotateZ(409deg) translateZ(-1528px)
+
+  10%
+    opacity: 0
+    transform: translate(-50%, -50%) rotateX(206deg) rotateY(-417deg) rotateZ(409deg) translateZ(-1528px)
+
+  90%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
+
+  100%
+    opacity: 1
+    transform: translate(-50%, -50%) rotate(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px)
